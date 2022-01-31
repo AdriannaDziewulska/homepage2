@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.mainHeader {
+    color: white;
+}
+
+.sectionHeader {
+    color: lightgray;
+}
+
+.pHeader {
+    color: gray;
+}
+
+.paragraph {
+    color: lightblue;
+}
+
+.footer{
+    color: gray;
+}
