@@ -1,5 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+
 body {
     background-color: #E2F9B8;
+    background: radial-gradient(circle, rgba(224,248,180,0.45) 0%, rgba(131,184,33,0.85) 100%);
     width: 100%;
     max-width: 700px;
     margin: 32px auto;
@@ -15,13 +25,13 @@ body {
     color: #455320;
 }
 
-.page__content-list--link{
-    padding-left:0;
+.page__content-list--link {
+    padding-left: 0;
 }
 
-.page__navigation--top{
+.page__navigation--top {
     background-color: #31371581;
-    display: block;
+    display: flex;
     position: fixed;
     position: relative;
     width: 100%;
@@ -29,18 +39,20 @@ body {
     margin-top: -27px;
     padding: 8px 16px 8px 16px;
     border-radius: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-.page__navigation--top-list{
+.page__navigation--top-list {
     list-style: none;
     padding: 0;
 }
 
-.page__navigation--top-list-item{
+.page__navigation--top-list-item {
     display: inline;
 }
 
-.page__navigation--button{
+.page__navigation--button {
     background-color: #31371581;
     border-radius: 30px;
     padding: 5px;
@@ -72,11 +84,13 @@ body {
     color: black;
 }
 
-.article__image{
+.article__image {
     max-width: 400px;
     width: 100%;
     margin: 16px;
     border-radius: 30px;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
