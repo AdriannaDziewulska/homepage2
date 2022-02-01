@@ -10,22 +10,28 @@
 
 <body>
     <header id="top">
-        <p class="page__navigation--top">
-        <a  href="index.html">Strona główna</a>
-        <a  href="podstrona.html">Podstrona</a>
-        </p>
+        <nav class="page__navigation--top">
+            <ul class="page__navigation--top-list">
+                <li class="page__navigation--top-list-item"><a href="index.html">Strona główna</a></li>
+                <li class="page__navigation--top-list-item"><a href="podstrona.html">Podstrona</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <header>
-            <h1 class="page__title" >
+            <h1 class="page__title">
                 <i> Dziady </i> cz. III
             </h1>
         </header>
         <article>
-            <h3 class="page__content-list">Spis treści:</h3>
-            <a class="page__content-list--link" href="#1">1. Geneza utworu</a> <br>
-            <a class="page__content-list--link" href="#2">2. Czas i miejsce akcji</a> <br>
-            <a class="page__content-list--link" href="#7">7. Wydarzenia </a>
+            <ol class="page__content-list">
+                <caption>
+                    <h2>Spis treści:</h2>
+                </caption>
+                <li><a class="page__content-list--link" href="#1">Geneza utworu</a></li>
+                <li><a class="page__content-list--link" href="#2">Czas i miejsce akcji</a></li>
+                <li><a class="page__content-list--link" href="#7">Wydarzenia </a></li>
+            </ol>
         </article>
         <section id="1">
             <h2 class="article__title">
@@ -85,6 +91,71 @@
             <p class="article__content">
                 <a class="article__content--link" href="podstrona.html"> Przejdź do Sceny II</a>
             </p>
+
+            <table class="article__table">
+                <caption>
+                    <h3 class="article__subtitle">Spis scen:</h3>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Scena</th>
+                        <th>Czas akcji</th>
+                        <th>Miejsce akcji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prolog</td>
+                        <td>1.11.1823r.</td>
+                        <td>klasztor ojców bazylianów, sala więzienna - Wilno</td>
+                    </tr>
+                    <tr>
+                        <td>Scena I</td>
+                        <td>24:00 wigilia Bożego Narodzenia</td>
+                        <td>korytarz więzienny, cela Konrada</td>
+                    </tr>
+                    <tr>
+                        <td>Scena II</td>
+                        <td>noc, wigilia Bożego Narodzenia</td>
+                        <td>cela Konrada</td>
+                    </tr>
+                    <tr>
+                        <td>Scena III</td>
+                        <td>noc, wigilia Bożego Narodzenia</td>
+                        <td>cela Konrada</td>
+                    </tr>
+                    <tr>
+                        <td>Scena IV</td>
+                        <td>24:00, czas bliżej nieokreślony</td>
+                        <td>dom wiejski - Lwów</td>
+                    </tr>
+                    <tr>
+                        <td>Scena V</td>
+                        <td>Wielkanoc</td>
+                        <td>cela ks. Piotra</td>
+                    </tr>
+                    <tr>
+                        <td>Scena VI</td>
+                        <td>noc</td>
+                        <td>sypialnia Senatora Novosilcowa - Wilno</td>
+                    </tr>
+                    <tr>
+                        <td>Scena VII</td>
+                        <td>wieczór</td>
+                        <td>salon arystokraty warszawskiego</td>
+                    </tr>
+                    <tr>
+                        <td>Scena VIII</td>
+                        <td>popołudnie</td>
+                        <td>sala przedpokojowa Novosilcowa - Wilno</td>
+                    </tr>
+                    <tr>
+                        <td>Scena IX</td>
+                        <td>1.11.1824r.</td>
+                        <td>cmentarz, kaplica</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
     </main>

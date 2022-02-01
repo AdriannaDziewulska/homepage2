@@ -15,6 +15,10 @@ body {
     color: #455320;
 }
 
+.page__content-list--link{
+    padding-left:0;
+}
+
 .page__navigation--top{
     background-color: #31371581;
     display: block;
@@ -23,22 +27,37 @@ body {
     width: 100%;
     box-sizing: border-box;
     margin-top: -27px;
-    padding: 16px;
+    padding: 8px 16px 8px 16px;
     border-radius: 30px;
+}
+
+.page__navigation--top-list{
+    list-style: none;
+    padding: 0;
+}
+
+.page__navigation--top-list-item{
+    display: inline;
 }
 
 .page__navigation--button{
     background-color: #31371581;
     border-radius: 30px;
-    padding:10px;
+    padding: 5px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
     text-decoration: none;
 }
 
 .page__footer {
-    color: #78903C;
+    color: #455320;
+    background-color: #31371581;
+    border-radius: 30px;
+    padding: 5px;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
 }
 
 .article__title {
