@@ -6,16 +6,18 @@
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="top">
     <header>
-        <a href="index.html">Strona główna</a>
-        <a href="podstrona.html">Podstrona</a>
+        <p class="page__navigation--top">
+            <a  href="index.html">Strona główna</a>
+            <a  href="podstrona.html">Podstrona</a>
+        </p>
     </header>
     <main>
-        <img src="mickiewicz-adam.jpg" alt="Wizerunek Adama Mickiewicza">
+        <img class="article__image" src="mickiewicz-adam.jpg" alt="Wizerunek Adama Mickiewicza">
         <article>
-        <h1 class="mainHeader"> Scena II - Wielka Improwizacja: </h1>
-        <p class="paragraph">
+        <h1 class="article__title"> Scena II - Wielka Improwizacja: </h1>
+        <p class="article__content">
             - drugi monolog Konrada, <br>
             - Konrad skarży się na niezrozumienie jako poety, za godnych odbiorców swojej twórczości uznaje Boga i naturę, <br>
             - stawia siebie na równi z Bogiem, nawet próbuje z nim konkurować,<br>
@@ -31,11 +33,12 @@
             - Konrad przyjmuję postawę prometejską - poświęcenie osobiste dla dobra ogółu, cierpienie, bunt wobec Boga/bogów
         </p>
     </article>
-    <a href="index.html">Powrót</a>
+    <a class="article__content--link" href="index.html">Powrót</a>
     </main>
 
-    <footer class="footer">
+    <footer class="page__footer">
         By Adrianna Dziewulska 
     </footer>
+    <a class="page__navigation--button" href="#top">Na górę</a>
 </body>
 </html>
