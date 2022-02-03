@@ -9,14 +9,14 @@ html {
 
 body {
     background-color: #E2F9B8;
-    background: radial-gradient(circle, rgba(224,248,180,0.45) 0%, rgba(131,184,33,0.85) 100%);
+    background: radial-gradient(circle, rgba(224, 248, 180, 0.45) 0%, rgba(131, 184, 33, 0.85) 100%);
     width: 100%;
     max-width: 700px;
     margin: 32px auto;
     box-sizing: border-box;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
@@ -27,7 +27,7 @@ body {
     color: #D16014;
 }
 
-.page__content-list--link, .article__content--link, .page__navigation--button, .page__navigation--top {
+.page__content-list--link, .article__content--link, .page__navigation--button, .page__navigation {
     color: #455320;
 }
 
@@ -35,7 +35,7 @@ body {
     padding-left: 0;
 }
 
-.page__navigation--top {
+.page__navigation-list {
     background-color: #31371581;
     display: flex;
     position: fixed;
@@ -47,14 +47,15 @@ body {
     border-radius: 30px;
     flex-flow: row wrap;
     justify-content: center;
+    z-index: 10;
 }
 
-.page__navigation--top-list {
+.page__navigation-list {
     list-style: none;
     padding: 0;
 }
 
-.page__navigation--top-list-item {
+.page__navigation-list-item {
     display: inline;
 }
 
@@ -101,12 +102,46 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 640px){
-    .grid{
+@media (max-width: 640px) {
+    .grid {
         grid-template-columns: 1fr;
     }
-    body{
+
+    body {
         padding: 16px;
         padding-top: 0;
+    }
+
+    .page__navigation-list-item {
+        padding: 16px;
+
+    }
+
+    .page__navigation-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .page__navigation-list--visible {
+        display: flex;
+    }
+
+    .page__navigation--switcher {
+        border: none;
+        background: none;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+    }
+
+    .page__header {
+        min-height: 48px;
+    }
+
+}
+
+@media (min-width: 641px) {
+    .page__navigation--switcher {
+        display: none;
     }
 }
