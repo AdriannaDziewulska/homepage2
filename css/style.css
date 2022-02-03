@@ -14,7 +14,13 @@ body {
     max-width: 700px;
     margin: 32px auto;
     box-sizing: border-box;
+}
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
 }
 
 .page__title {
@@ -93,4 +99,14 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 640px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    body{
+        padding: 16px;
+        padding-top: 0;
+    }
 }
