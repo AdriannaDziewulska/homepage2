@@ -9,14 +9,15 @@
     <link href="../homepage2/css/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
-<body id="top">
-    <header>
-        <nav class="page__navigation">
-            <ul class="page__navigation-list">
-                <li class="page__navigation-list-item"><a href="index.html">Strona główna</a></li>
-                <li class="page__navigation-list-item"><a href="podstrona.html">Podstrona</a></li>
+<body>
+    <header id="top">
+        <nav class="page__navigation--top">
+            <ul class="page__navigation--top-list page__navigation--top-list--js">
+                <li class="page__navigation--top-list-item"><a href="index.html">Strona główna</a></li>
+                <li class="page__navigation--top-list-item"><a href="podstrona.html">Podstrona</a></li>
             </ul>
         </nav>
+        <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">☰</button>
     </header>
     <main>
         <img class="article__image" src="../homepage2/img/mickiewicz-adam.jpg" alt="Wizerunek Adama Mickiewicza">
@@ -52,6 +53,7 @@
         By Adrianna Dziewulska
     </footer>
     <a class="page__navigation--button" href="#top">Na górę</a>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
